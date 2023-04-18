@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+			background-image: url("https://www.rb2conseil.fr/wp-content/uploads/2021/08/agence-de-communication-sante-lyon-bleu.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+        .stars {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  margin: 0 5px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background-image: url("https://image.flaticon.com/icons/svg/148/148836.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+label:hover,
+label:hover ~ label {
+  background-image: url("https://image.flaticon.com/icons/svg/148/148836.svg");
+}
+
+input[type="radio"]:checked ~ label {
+  background-image: url("https://image.flaticon.com/icons/svg/148/148834.svg");
+}
+
+    </style>
+
+</head>
+<body>
+    <section id="about-us">
+    <h2>À propos de nous</h2>
+    <p>Notre objectif est de mettre en place une base de connaissances en ligne qui permettra aux patients de mieux appréhender leur maladie et les symptômes associés, sans avoir recours à une consultation médicale. Cette base de données sera élaborée à partir de sources crédibles et fiables telles que des sites gouvernementaux, des organisations de santé, des livres médicaux et des publications scientifiques. Les informations seront présentées de manière claire et concise, avec des catégories, des tags ou des thèmes pour faciliter leur recherche et leur compréhension. Des images et des vidéos seront également intégrées pour faciliter la compréhension des maladies et des traitements. L'objectif est de fournir aux patients un accès facile et pratique à des informations fiables sur leur santé, leur permettant ainsi de mieux comprendre leur état et de prendre des décisions éclairées quant à leur traitement.</p>
+    
+    <h3>Nous suivre :</h3>
+    <ul>
+      <li><a href="https://www.facebook.com/votrepagefacebook">Facebook</a></li>
+      <li><a href="https://www.instagram.com/votrepageinstagram">Instagram</a></li>
+    </ul>
+    
+    <h3>Nous contacter :</h3>
+    <ul>
+      <li>Téléphone : <a href="tel:0123456789">0123456789</a></li>
+      <li>E-mail : <a href="mailto:contact@votresite.com">contact@votresite.com</a></li>
+    </ul>
+    
+    <h3>Recevoir nos notifications :</h3>
+    <form action="newsletter.php" method="post">
+      <label for="email">Entrez votre e-mail :</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">S'abonner</button>
+    </form>
+    <h3>Bibliographie :</h3>
+    <ul>
+        <li><a href="https://www.nhlbi.nih.gov/health-topics/guidelines-for-diagnosis-management-of-asthma">https://www.nhlbi.nih.gov/health-topics/guidelines-for-diagnosis-management-of-asthma</a></li>
+        <li><a href=" https://www.vidal.fr/maladies/voies-respiratoires/asthme/traitements-crise.html"> https://www.vidal.fr/maladies/voies-respiratoires/asthme/traitements-crise.html</a></li>
+        <li> <a href="https://www.vidal.fr/maladies/metabolisme-diabete/diabete-type-2.html "> https://www.vidal.fr/maladies/metabolisme-diabete/diabete-type-2.html</a></li>
+        <li> <a href="https://www.federationdesdiabetiques.org/information/diabete">https://www.federationdesdiabetiques.org/information/diabete</a></li>
+      </ul>
+      <section id="rating">
+        <h2>Notez notre site :</h2>
+        <form action="#">
+            <fieldset class="rating">
+              <input type="radio" id="star5" name="rating" value="5">
+              <label for="star5" title="Excellent">5 étoiles</label>
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4" title="Très bien">4 étoiles</label>
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3" title="Bien">3 étoiles</label>
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2" title="Moyen">2 étoiles</label>
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1" title="Mauvais">1 étoile</label>
+            </fieldset>
+            <input type="submit" value="Envoyer">
+          </form>
+      </section>
+      <div>
+        <h3>Ajouter un commentaire</h3>
+        <form action="#" method="POST">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="comment">Commentaire :</label><br>
+          <textarea id="comment" name="comment" required></textarea><br><br>
+          <input type="submit" value="Ajouter commentaire">
+        </form>
+      </div>
+      
+   
+
+  </section>
+</body>
+</html>
